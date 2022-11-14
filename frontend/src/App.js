@@ -8,10 +8,10 @@ function App() {
     <Navigation/>
       <switch>
         <Route path ="/" exact>
-
           <Home/>
-
         </Route>
+
+        
       </switch>
     </BrowserRouter>
 
