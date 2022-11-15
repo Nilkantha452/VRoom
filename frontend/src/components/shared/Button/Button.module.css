@@ -1,0 +1,17 @@
+.ButtonWrapper
+{
+    display: flex;
+    justify-content: center;
+}
+.Button
+{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: large;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(12, 108, 141);
+    border: 0px solid black;
+}

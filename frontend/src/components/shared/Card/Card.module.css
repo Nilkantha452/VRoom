@@ -1,0 +1,22 @@
+.card
+{
+    padding-top: 15px;
+    background: #1D1D1D;
+    height: 354px;
+    width: 492px;
+    max-width: 90%;
+    border-radius: 20px;
+}
+.cardWrapper
+{
+    display: flex;
+    justify-content: center ;
+    margin-top: 6rem;
+}
+.frontTextCSS 
+{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
