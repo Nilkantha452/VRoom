@@ -1,14 +1,11 @@
 import React from 'react'
 import Styles from './Button.module.css'
-import {Link} from 'react-router-dom'
-const Button = ({destination}) => {
+const Button = ({onClick, text}) => {
   return (
     <div className={Styles.ButtonWrapper}>
-	    <Link to={`/${destination}`}>
-		    <button className={Styles.Button}>
-			    Go Ahead
+		    <button onClick={onClick} className={Styles.Button}>
+			    {text}
 		    </button>
-	    </Link>
     </div>
   )
 }
