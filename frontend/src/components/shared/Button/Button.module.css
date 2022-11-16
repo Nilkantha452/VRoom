@@ -14,4 +14,9 @@
     color: #ffffff;
     background-color: rgb(12, 108, 141);
     border: 0px solid black;
+    transition: 0.2s;
+}
+.Button:hover
+{
+    background-color: rgb(12, 64, 141);
 }

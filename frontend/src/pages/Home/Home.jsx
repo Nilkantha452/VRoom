@@ -1,8 +1,14 @@
 import React from 'react';
 import Styles from './Home.module.css';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import Button from '../../components/shared/Button/Button';
+
 const Home = () => {
+	const History = useHistory();
+	
+	const startRegistration = ()=>{
+		History.push('/Register')
+	}
   return (
 	<div className={Styles.cardWrapper}>
 		<div className={Styles.card}>
@@ -13,7 +19,7 @@ const Home = () => {
 			<p className={Styles.pTag}>
 				This is the best website ever, It is developed by Myself i.e. Nilkantha Bhattacharjee, Please find the code in Nilkantha452/VRoom, I can develop websites with React alongwith node.js framework. BTW that website will provide you the services to communicate with others with ease...
 			</p>
-			<Button destination = 'Login'/>
+			<Button text = 'Go Ahead' onClick = {startRegistration}/>
 			<div className={Styles.SignUpWrapper}>
 				<div className={Styles.SignUp}>
 					<span>Don't have an account?</span>
