@@ -1,8 +1,13 @@
 import React from 'react'
-
-const StepPhoneMail = () => {
+import Card from '../../../components/shared/Card/Card'
+import Button from '../../../components/shared/Button/Button'
+const StepPhoneMail = ({onNext}) => {
   return (
-    <div>StepPhoneMail</div>
+    <>
+      <Card title='Step phone mail' icon ='mail'>
+        <Button onClick={onNext} text='Next'/>
+      </Card>
+  </>
   )
 }
 

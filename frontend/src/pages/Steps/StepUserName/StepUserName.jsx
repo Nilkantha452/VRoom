@@ -1,8 +1,14 @@
 import React from 'react'
+import Card from '../../../components/shared/Card/Card'
+import Button from '../../../components/shared/Button/Button'
 
-const StepUserName = () => {
+const StepUserName = ({onNext}) => {
   return (
-    <div>StepUserName</div>
+    <>
+      <Card title='Step user name' icon ='mail'>
+        <Button onClick={onNext} text='Next'/>
+      </Card>
+    </>
   )
 }
 
