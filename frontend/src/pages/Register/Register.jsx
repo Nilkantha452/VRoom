@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Styles from './Register.module.css'
 import StepPhoneMail from '../Steps/StepPhoneMail/StepPhoneMail'
 import StepOtp from '../Steps/StepOtp/StepOtp'
@@ -14,9 +14,15 @@ const Steps = {
     5: StepUserName
 }
 const Register = () => {
+  const [currStep, setCurrStep] = useState(1);
+  const ComponentToShow = Steps[currStep];
+  function onNext(){
+    setCurrStep(currStep + 1)
+  }
+
   return (
     <div>
-        This is Register
+        <ComponentToShow onNext={onNext}/>
     </div>
   )
 }
